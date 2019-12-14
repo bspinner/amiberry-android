@@ -1,3 +1,19 @@
 [submodule "amiberry"]
 	path = app/jni/src/amiberry
 	url = git@github.com:bspinner/amiberry.git
+[submodule "SDL2"]
+	path = app/jni/src/SDL2
+	url = git@github.com:SDL-mirror/SDL.git
+	branch = master
+[submodule "SDL2_mixer"]
+	path = app/jni/src/SDL2_mixer
+	url = git@github.com:SDL-mirror/SDL_mixer.git
+	branch = master
+[submodule "SDL2_ttf"]
+	path = app/jni/src/SDL2_ttf
+	url = git@github.com:SDL-mirror/SDL_ttf.git
+	branch = master
+[submodule "SDL2_image"]
+	path = app/jni/src/SDL2_image
+	url = git@github.com:SDL-mirror/SDL_image.git
+	branch = master
