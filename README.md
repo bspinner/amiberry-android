@@ -4,7 +4,10 @@
 
 This project tries to get it up and running on Android devices.
 
-## Current status
+## Current status (see develop)
 
-- Emulator crashes on start
+- Amiberry GUI comes up
+- Emulator crashes if started via GUI
+- It's possible to get emulation started for a Kickstart via code
 - Missing proper dedicated UI for Android/finger input
+- Still a lot of stuff to do
