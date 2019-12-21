@@ -2,6 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/jni/src/SDL2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/jni/src/SDL2_image" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/jni/src/SDL2_mixer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/app/jni/src/SDL2_ttf" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app/jni/src/amiberry" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app/jni/src/amiberry/external/capsimg" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app/jni/src/amiberry/external/libmpeg2" vcs="Git" />
