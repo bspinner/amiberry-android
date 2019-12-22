@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Game</string>
-    <string name="title_activity_startup">StartupActivity</string>
+    <string name="app_name">Amiberry</string>
+    <string name="title_activity_startup">@string/app_name</string>
     <string name="action_settings">Settings</string>
 </resources>
