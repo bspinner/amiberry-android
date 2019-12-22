@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.libsdl.app"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="de.codelett.amiberry"
     android:installLocation="auto">
     <!-- Touchscreen support -->
     <uses-feature
@@ -39,7 +40,7 @@
         <meta-data android:name="SDL_ENV.SDL_ACCELEROMETER_AS_JOYSTICK" android:value="0"/>
         -->
         <activity
-            android:name=".SDLActivity"
+            android:name="org.libsdl.app.SDLActivity"
             android:alwaysRetainTaskState="true"
             android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
             android:label="@string/app_name"
