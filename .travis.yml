@@ -1,0 +1,16 @@
+git:
+    submodules: false
+before_install:
+# Use sed to replace the SSH URL with the public HTTPS url (to prevent publickey error)
+    - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+    - git submodule update --init --recursive
+# travis doesn't support ndk setup out of the box
+    - echo y | sdkmanager "ndk;20.1.5948944"
+language: android
+dist: trusty
+android:
+  components:
+    - tools
+    - platform-tools
+    - build-tools-28.0.3
+    - android-28
