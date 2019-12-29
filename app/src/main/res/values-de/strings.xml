@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY appname "Amiberry alpha">
+]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="title_activity_startup">@string/app_name</string>
+    <string name="hi">Hi!</string>
+    <string name="thanks_for_installing_amiberry">Danke, dass du &appname; installiert hast!\n\nZuerst: bitte bedenke, dass es sich hierbei um eine frühe alpha Version handelt. Das große Ziel ist ein sehr nutzerfreundlicher Amiga Emulator mit großartiger nativer Benutzeroberfläche. Aktuell befinden wir uns jedoch erst am Anfang der Entwicklung, so dass noch viele Features fehlen und noch einige Bugs zu fixen sind.\n\nBevor du mit dem Emulator in Erinnungen schwelgen kannst, benötigen wir zunächst Zugriff auf deinen Gerätespeicher, damit der Emulator auf deine Kickstart ROMs und Spieledateien zugreifen kann. Wenn du damit einverstanden bist, tappe bitte auf Fortfahren und bestätige den Dialog.</string>
+    <string name="proceed">Fortfahren</string>
+</resources>
