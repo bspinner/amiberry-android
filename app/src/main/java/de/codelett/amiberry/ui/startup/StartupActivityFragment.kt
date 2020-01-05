@@ -37,14 +37,12 @@ class StartupActivityFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        proceed.isEnabled = false;
         proceed.setOnClickListener { _ ->
             requestPermissions(arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), permissionsRequestCode)
         }
 
         if (savedInstanceState != null) {
             // don't force restart the emulation on rotation etc.
-            proceed.isEnabled = true
             return
         }
 
@@ -53,8 +51,6 @@ class StartupActivityFragment : Fragment() {
             if (ContextCompat.checkSelfPermission(it, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                 // Permission has already been granted
                 setupAndStartEmulation()
-            } else {
-                proceed.isEnabled = true;
             }
         } ?: throw Exception("Invalid Activity")
     }
@@ -70,6 +66,11 @@ class StartupActivityFragment : Fragment() {
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+
+        if(requestCode != permissionsRequestCode)
+        {
+            return
+        }
 
         if (permissions.isEmpty()) {
             // Request was likely cancelled
