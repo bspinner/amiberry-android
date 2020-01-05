@@ -10,9 +10,9 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
+import de.codelett.amiberry.AmiberryActivity
 import de.codelett.amiberry.R
 import kotlinx.android.synthetic.main.fragment_startup.*
-import org.libsdl.app.SDLActivity
 
 class StartupActivityFragment : Fragment() {
 
@@ -58,7 +58,7 @@ class StartupActivityFragment : Fragment() {
     private fun setupAndStartEmulation()
     {
         this.activity?.let {
-            val intent = Intent(it, SDLActivity::class.java)
+            val intent = Intent(it, AmiberryActivity::class.java)
             model.extractGameContent()
             startActivity(intent)
         } ?: throw Exception("Activity went missing")

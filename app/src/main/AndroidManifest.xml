@@ -39,7 +39,7 @@
         <meta-data android:name="SDL_ENV.SDL_ACCELEROMETER_AS_JOYSTICK" android:value="0"/>
         -->
         <activity
-            android:name="org.libsdl.app.SDLActivity"
+            android:name=".AmiberryActivity"
             android:alwaysRetainTaskState="true"
             android:screenOrientation="sensorLandscape"
             android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
