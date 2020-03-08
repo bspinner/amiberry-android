@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import de.codelett.amiberry.AmiberryActivity
 import de.codelett.amiberry.R
 import kotlinx.android.synthetic.main.fragment_startup.*
@@ -24,7 +24,7 @@ class StartupActivityFragment : Fragment() {
         super.onCreate(savedInstanceState)
         this.activity?.let {
             model = it.run {
-                ViewModelProviders.of(it)[StartupViewModel::class.java]
+                ViewModelProvider(it).get(StartupViewModel::class.java)
             }
         }
     }
