@@ -9,4 +9,5 @@
     <string name="hi">Hi!</string>
     <string name="thanks_for_installing_amiberry">Thanks for installing &appname;!\n\nFirst: please note this is an early alpha of an Amiga emulator for Android. The big goal is a very user friendly app with a great native Android UI. But we are just at the beginning of development, so there are a lot of missing features and bugs.\n\nBefore you can start bringing back those good old memories, we need access to your device\'s storage, so we can use your kickstart roms and game files. If you\'re okay with that, please tap proceed and grant us the permission.</string>
     <string name="proceed">Proceed</string>
+    <string name="open_settings">Open settings</string>
 </resources>
