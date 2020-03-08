@@ -5,6 +5,10 @@ import android.widget.FrameLayout
 import de.codelett.amiberry.ui.ControllerOverlay
 import org.libsdl.app.SDLActivity
 
+/**
+ * Custom SDLActivity
+ * Adds the controller overlay
+ */
 class AmiberryActivity : SDLActivity() {
 
     private lateinit var controllerOverlay: ControllerOverlay

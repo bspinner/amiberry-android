@@ -7,10 +7,9 @@ import de.codelett.amiberry.R
 import kotlinx.android.synthetic.main.amiberry_controlleroverlay.view.*
 import org.libsdl.app.SDLActivity
 
-internal class ControllerOverlay : FrameLayout
+internal class ControllerOverlay(context: SDLActivity) : FrameLayout(context)
 {
-    constructor(context: SDLActivity) : super(context)
-    {
+    init {
         inflate(context, R.layout.amiberry_controlleroverlay, this)
 
         // Directional Buttons
